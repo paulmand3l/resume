@@ -1,6 +1,6 @@
 {
-  "name": "resume",
-  "version": "0.1.0",
+  "name": "paulmandel-resume",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@react-pdf/renderer": "^1.6.13",
@@ -35,5 +35,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "license": "MIT"
 }
