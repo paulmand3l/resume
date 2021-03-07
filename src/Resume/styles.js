@@ -1,46 +1,47 @@
 import { StyleSheet, Font } from '@react-pdf/renderer'
-import * as fonts from './fonts'
 
 
-Font.register({ family: 'Source Sans Pro', fonts: [
-  { src: "https://cdn.jsdelivr.net/gh/google/fonts/ofl/sourcesanspro/SourceSansPro-ExtraLight.ttf", fontWeight: 200 },
-  { src: "https://cdn.jsdelivr.net/gh/google/fonts/ofl/sourcesanspro/SourceSansPro-Light.ttf", fontWeight: 300 },
-  { src: "https://cdn.jsdelivr.net/gh/google/fonts/ofl/sourcesanspro/SourceSansPro-Regular.ttf" },
-  { src: "https://cdn.jsdelivr.net/gh/google/fonts/ofl/sourcesanspro/SourceSansPro-SemiBold.ttf", fontWeight: 600 },
-  { src: "https://cdn.jsdelivr.net/gh/google/fonts/ofl/sourcesanspro/SourceSansPro-Bold.ttf", fontWeight: 700 },
+// Font.register({ family: 'SFPro Display', fonts: [
+//   { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFPro/TrueType/SFProDisplay-UltraLight.ttf", fontWeight: 100 },
+//   { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFPro/TrueType/SFProDisplay-Thin.ttf", fontWeight: 200 },
+//   { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFPro/TrueType/SFProDisplay-Light.ttf", fontWeight: 300 },
+//   { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFPro/TrueType/SFProDisplay-Regular.ttf", fontWeight: 400 },
+//   { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFPro/TrueType/SFProDisplay-Medium.ttf", fontWeight: 500 },
+//   { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFPro/TrueType/SFProDisplay-SemiBold.ttf", fontWeight: 600 },
+//   { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFPro/TrueType/SFProDisplay-Bold.ttf", fontWeight: 700 },
+//   { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFPro/TrueType/SFProDisplay-Heavy.ttf", fontWeight: 800 },
+//   { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFPro/TrueType/SFProDisplay-Black.ttf", fontWeight: 900 },
+// ]});
+
+// Font.register({ family: 'SFPro Text', fonts: [
+//   { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFPro/TrueType/SFProText-Light.ttf", fontWeight: 300 },
+//   { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFPro/TrueType/SFProText-Regular.ttf", fontWeight: 400 },
+//   { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFPro/TrueType/SFProText-Medium.ttf", fontWeight: 500 },
+//   { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFPro/TrueType/SFProText-SemiBold.ttf", fontWeight: 600 },
+//   { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFPro/TrueType/SFProText-Bold.ttf", fontWeight: 700 },
+//   { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFPro/TrueType/SFProText-Heavy.ttf", fontWeight: 800 },
+// ]});
+
+Font.register({ family: 'SFCompact Display', fonts: [
+  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-UltraLight.ttf", fontWeight: 100 },
+  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Thin.ttf", fontWeight: 200 },
+  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Light.ttf", fontWeight: 300 },
+  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Regular.ttf", fontWeight: 400 },
+  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Medium.ttf", fontWeight: 500 },
+  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-SemiBold.ttf", fontWeight: 600 },
+  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Bold.ttf", fontWeight: 700 },
+  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Heavy.ttf", fontWeight: 800 },
+  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Black.ttf", fontWeight: 900 },
 ]});
 
-Font.register({ family: 'Overpass', fonts: [
-  { src: "https://cdn.jsdelivr.net/gh/google/fonts/ofl/overpass/Overpass-ExtraLight.ttf", fontWeight: 200 },
-  { src: "https://cdn.jsdelivr.net/gh/google/fonts/ofl/overpass/Overpass-Light.ttf", fontWeight: 300 },
-  { src: "https://cdn.jsdelivr.net/gh/google/fonts/ofl/overpass/Overpass-Regular.ttf" },
-  { src: "https://cdn.jsdelivr.net/gh/google/fonts/ofl/overpass/Overpass-SemiBold.ttf", fontWeight: 600 },
-  { src: "https://cdn.jsdelivr.net/gh/google/fonts/ofl/overpass/Overpass-Bold.ttf", fontWeight: 700 },
-]});
 
-Font.register({ family: 'San Francisco Display', fonts: [
-  { src: "https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff", fontWeight: 100 },
-  { src: "https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff", fontWeight: 200 },
-  { src: "https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff", fontWeight: 400 },
-  { src: "https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff", fontWeight: 500 },
-  { src: "https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff", fontWeight: 600 },
-  { src: "https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff", fontWeight: 700 },
-]});
-
-Font.register({ family: 'San Francisco Text', fonts: [
-  { src: "https://cdn.jsdelivr.net/gh/pedrouid/san-francisco-fonts/assets/SFProText-Regular.ttf", fontWeight: 400 },
-  { src: "https://cdn.jsdelivr.net/gh/pedrouid/san-francisco-fonts/assets/SFProText-Medium.ttf", fontWeight: 500 },
-  { src: "https://cdn.jsdelivr.net/gh/pedrouid/san-francisco-fonts/assets/SFProText-SemiBold.ttf", fontWeight: 600 },
-  { src: "https://cdn.jsdelivr.net/gh/pedrouid/san-francisco-fonts/assets/SFProText-Bold.ttf", fontWeight: 700 },
-]});
-
-Font.register({ family: 'San Francisco Compact Text', fonts: [
-  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactText-Light.ttf", fontWeight: 200 },
-  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactText-Regular.ttf", fontWeight: 400 },
-  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactText-Medium.ttf", fontWeight: 500 },
-  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactText-SemiBold.ttf", fontWeight: 600 },
-  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactText-Bold.ttf", fontWeight: 700 },
-  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactText-Heavy.ttf", fontWeight: 900 },
+Font.register({ family: 'SFCompact Text', fonts: [
+  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Light.ttf", fontWeight: 300 },
+  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Regular.ttf", fontWeight: 400 },
+  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Medium.ttf", fontWeight: 500 },
+  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-SemiBold.ttf", fontWeight: 600 },
+  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Bold.ttf", fontWeight: 700 },
+  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Heavy.ttf", fontWeight: 800 },
 ]});
 
 Font.register({
@@ -53,7 +54,7 @@ const styles = StyleSheet.create({
   page: {
     padding: 72/2,
     justifyContent: "space-between",
-    fontFamily: "San Francisco Display",
+    fontFamily: "SFCompact Display",
   },
 
   header: {
@@ -64,7 +65,7 @@ const styles = StyleSheet.create({
   },
 
   name: {
-    // marginTop: -2,
+    marginTop: -2,
     fontSize: 42,
   },
 
@@ -78,7 +79,6 @@ const styles = StyleSheet.create({
 
   tagline: {
     // marginLeft: 72/2,
-    fontFamily: "San Francisco Display",
     fontWeight: 100,
     fontSize: 22,
     marginBottom: 10,
@@ -108,14 +108,14 @@ const styles = StyleSheet.create({
   },
 
   item: {
-    fontFamily: "San Francisco Compact Text",
-    fontSize: 10,
+    fontFamily: "SFCompact Text",
+    fontSize: 10.5,
     lineHeight: 1.2,
-    marginBottom: 5,
+    marginBottom: 4,
   },
 
   itemFirstLine: {
-    lineHeight: 1.3,
+    lineHeight: 1.4,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
