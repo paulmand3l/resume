@@ -83,13 +83,12 @@ const data = {
         "Worked with head of Robotics Institute to drive user-centric robotics research.",
       ],
     }, {
-      summary1: "Franklin W. Olin College of Engineering",
+      summary1: "Olin College of Engineering",
       summary2: "B.S. in Engineering, Robotics & Control",
       dates: "Graduated May 2009",
       bullets: [
-        "Specialized in novel user interfaces and human-robot interaction.",
-        "Worked with head of Robotics Institute to drive user-centric robotics research.",
-      ],
+        "Developed meter-long robotic tuna fish for senior capstone."
+      ]
     }]
   }, {
     name: "Misc",
