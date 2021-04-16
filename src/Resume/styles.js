@@ -1,4 +1,10 @@
 import { StyleSheet, Font } from '@react-pdf/renderer'
+import {
+  SFCompactDisplayUltraLight,
+  SFCompactDisplayRegular,
+  SFCompactTextRegular,
+  SFCompactTextBold,
+} from './fonts'
 
 
 // Font.register({ family: 'SFPro Display', fonts: [
@@ -23,25 +29,14 @@ import { StyleSheet, Font } from '@react-pdf/renderer'
 // ]});
 
 Font.register({ family: 'SFCompact Display', fonts: [
-  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-UltraLight.ttf", fontWeight: 100 },
-  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Thin.ttf", fontWeight: 200 },
-  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Light.ttf", fontWeight: 300 },
-  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Regular.ttf", fontWeight: 400 },
-  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Medium.ttf", fontWeight: 500 },
-  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-SemiBold.ttf", fontWeight: 600 },
-  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Bold.ttf", fontWeight: 700 },
-  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Heavy.ttf", fontWeight: 800 },
-  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Black.ttf", fontWeight: 900 },
+  { src: SFCompactDisplayUltraLight, fontWeight: 100 },
+  { src: SFCompactDisplayRegular, fontWeight: 400 },
 ]});
 
 
 Font.register({ family: 'SFCompact Text', fonts: [
-  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Light.ttf", fontWeight: 300 },
-  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Regular.ttf", fontWeight: 400 },
-  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Medium.ttf", fontWeight: 500 },
-  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-SemiBold.ttf", fontWeight: 600 },
-  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Bold.ttf", fontWeight: 700 },
-  { src: "https://cdn.jsdelivr.net/gh/blaisck/sfwin/SFCompact/TrueType/SFCompactDisplay-Heavy.ttf", fontWeight: 800 },
+  { src: SFCompactTextRegular, fontWeight: 400 },
+  { src: SFCompactTextBold, fontWeight: 700 },
 ]});
 
 Font.register({
@@ -109,7 +104,7 @@ const styles = StyleSheet.create({
 
   item: {
     fontFamily: "SFCompact Text",
-    fontSize: 10.5,
+    fontSize: 10,
     lineHeight: 1.2,
     marginBottom: 4,
   },
