@@ -6,11 +6,23 @@ const data = {
   tagline: "Product excellence through holistic design leadership",
   sections: [{
     name: "Experience",
-    items: [{
+    items: [
+    {
+      summary1: "Canvas",
+      summary2: "UX/UI Manager",
+      summary3: "Collaborative robots to speed up drywall finishing",
+      dates: 'Jun 2021 – Aug 2022',
+      bullets: [
+        "Managed of six designers and engineers, working across software and hardware",
+        "Advocated for UX process and design thinking across the organization.",
+        "Drove successful redesign/rewrite of on-machine interface.",
+      ]
+    },
+    {
       summary1: "Google Nest",
       summary2: "Staff UX Engineer",
       summary3: "Improving Google-wide hardware product design",
-      dates: "Nov 2020 – Present",
+      dates: "Nov 2020 – May 2021",
       bullets: [
         "Established hardware design as recognized UX Engineering sub-specialty.",
         "Developed hardware-centric prototyping tools used across Google.",
@@ -62,6 +74,7 @@ const data = {
         "Identified opportunities to improve market fit of flagship product.",
         "Coordinated extensive, distributed human-centered research process.",
       ],
+      hidden: true,
     }, {
       summary1: "Rethink Robotics",
       summary2: "Software Engineering Contractor",

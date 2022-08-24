@@ -27,7 +27,7 @@ const Resume = props => (
             <Text style={styles.sectionName}>{ section.name }</Text>
           </View>
 
-          { section.items.map((item, i) => (
+          { section.items.map((item, i) => !item.hidden && (
             <View key={i} style={styles.item}>
 
               { item.summary1 ? (
