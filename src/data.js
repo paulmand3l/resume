@@ -13,9 +13,9 @@ const data = {
       summary3: "Collaborative robots to speed up drywall finishing",
       dates: 'Jun 2021 – Aug 2022',
       bullets: [
-        "Managed team of six designers and engineers working across software and hardware",
-        "Advocated for UX process and design thinking across the organization.",
-        "Drove successful redesign/rewrite of on-machine interface.",
+        "Managed team of six designers and engineers working across software and hardware.",
+        "Implemented UX process and design thinking throughout product and eng teams.",
+        "Improved operator satisfaction through successful redesign of on-machine interface.",
       ]
     },
     {
